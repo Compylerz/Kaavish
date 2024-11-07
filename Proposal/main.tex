@@ -1,0 +1,209 @@
+\documentclass{article}
+
+\usepackage{array}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage{geometry} 
+\usepackage{graphicx}
+\usepackage{soul}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{hyperref}
+\bibliographystyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN METADATA: Edit the following as appropriate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Project Title}  % the title of your project
+\newcommand\shorttitle{\thetitle}  % if needed: a shorter title for the document header
+% Team members.
+\newcommand\firstname{Ahmed Ali}  % full name
+\newcommand\firstid{aa07600}         % ID, e.g. xy01234
+\newcommand\secondname{ Burhanuddin Aliasghar Ezzo} % full name
+\newcommand\secondid{be07724}        % ID, e.g. xy01234
+\newcommand\thirdname{Ahsan Azeemi}  % full name
+\newcommand\thirdid{aa07729}         % ID, e.g. xy01234
+% Uncomment the rows for the next 2 students if and as needed.
+% \newcommand\fourthname{Student 4} % full name
+% \newcommand\fourthid{id04}        % ID, e.g. xy01234
+% \newcommand\fifthname{Student 5}  % full name
+% \newcommand\fifthid{id05}         % ID, e.g. xy01234
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END METADATA: Do not edit the preamble any further.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\lhead{Kaavish Proposal}
+\chead{\shorttitle}
+\rhead{Fall 2023}
+\cfoot{Page \thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand\instruction[1]{\textit{#1}}
+
+\begin{document}
+
+% Cover page.
+\input{cover}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DATA: Populate the rest of the document as instructed.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Abstract}
+% \instruction{Please write a 500-600 word abstract on the project idea. It should not be very technically written but should be understandable by anyone.}
+In recent years, the global IT industry has witnessed unprecedented growth, now valued at over \$5 trillion. However, the rapid expansion of this sector has intensified the demand for skilled IT professionals, a challenge particularly pronounced in developing countries like Pakistan. The existing educational frameworks struggle to meet this demand, leading to a disconnect between the skills taught in academic institutions and the competencies required by the job market. 
+
+This proposal introduces a unified educational platform designed to enhance the assessment and learning experience for students in the field of information technology. The platform aims to address the inefficiencies inherent in the current educational landscape, which often relies on multiple fragmented tools for creating assignments, grading, and tracking student progress. By providing a comprehensive solution, we aspire to streamline the educational process for both students and educators.
+
+Our platform will feature a range of functionalities, including custom assignment creation, automatic grading, and real-time performance tracking, all integrated into a user-friendly interface. This tool will not only facilitate a smoother educational experience but also empower students to enhance their coding skills through interactive assessments and instant feedback.
+
+By focusing on the educational sector, this initiative aims to bridge the skill gap faced by students in under-resourced institutions, providing them with the necessary tools to compete in a global job market. Furthermore, the platform will reduce the administrative burden on educators, enabling them to concentrate on teaching and mentoring rather than administrative tasks. 
+
+Ultimately, this project seeks to contribute to the development of a skilled IT workforce in Pakistan, fostering economic growth and reducing educational inequality. Through a collaborative effort among our team members, we are committed to delivering a robust and scalable solution that can adapt to the evolving needs of educational institutions and their students.
+
+\section{Problem definition}
+% \instruction{Describe the problem that the project addresses.}
+The global IT industry has grown exponentially over the past few years. The industry is valued at over \$5 trillion and is expected to grow even further \cite{statista}. With the industry's growth, the demand for skilled IT professionals has also increased. However, the current education standards, especially in developing countries like Pakistan, are not up to the mark \cite{tribune}.
+
+In educational institutes across the globe, the process of assessing students' skills in programming and technical subjects is often fragmented and inefficient. Current tools for creating and grading assignments lack the flexibility and scalability needed to provide a seamless experience for both students and educators. 
+
+Many institutes use many different tools for different purposes. For example, they might use one tool for creating assignments, another for grading them, and another for tracking student progress. This leads to a disjointed experience for students and educators, making it difficult to manage assignments, track progress, and provide feedback. Also, this makes it resource-intensive for the institutes and faculty to manage all these tools.
+
+Without a unified platform to handle assessments, quizzes, and practice questions, and to provide instant feedback, educational institutes are missing a crucial opportunity to enhance student learning outcomes, increase faculty efficiency, and improve the overall academic experience.
+
+
+\section{Social relevance}
+% \instruction{Describe any societal problem that the project addresses.}
+The project addresses several societal problems related to the IT industry and education in developing countries like Pakistan. These include:
+
+\begin{itemize}
+    \item \textbf{Educational Inequality:} Students in Pakistan, especially those from under-resourced institutions, face challenges in accessing integrated learning tools that could help them enhance their skills and compete with their global peers. This lack of access contributes to a widening skill gap and limits their employment opportunities.
+    \item \textbf{Employment and Economic Impact:} The skill gap negatively affects students' employment prospects, making it harder for them to secure high-paying jobs in the global IT sector. This limitation also impacts the country’s overall technological advancement and economic growth.
+    \item \textbf{The Role of a Unified Educational Tool:} A unified, low-cost educational tool could address inefficiencies in assessment, learning, and feedback in Pakistan’s educational system. By offering a more rigorous evaluation framework, this tool can help students develop stronger skills and become more competitive on a global stage.
+    \item \textbf{Reducing Educator Burden:} The tool would also lessen the administrative workload for educators, allowing them to focus more on teaching and mentoring. This could lead to improved educational outcomes and help close the skill gap in Pakistan's IT workforce. This would also help in situations with a bad student-teacher ratio.
+\end{itemize}
+
+\section{Originality/Novelty}
+% \instruction{Describe the value of solving the problem. Compare and contrast with any existing solutions.}
+The project isn't completely novel, but it does approach a unique segment of the industry. Coding platforms currently available in the market usually cater to the corporate industry focusing on screening test, coding interviews, enterprise-level training plans etc. Platforms like Hackerrank \cite{eg_hr}, Leetcode \cite{eg_lc}, CodeSignal \cite{eg_cs}, etc. are some of the examples. However, there is a lack of platforms that cater to the educational sector. Our project aims to bridge this gap by providing a platform that caters to the educational institutes, students and instructors. The platform will provide a wide range of features that will help students learn and practice coding, instructors to create and manage assignments, and educational institutes to monitor the progress of their students.
+
+\section{CS contribution}
+% \instruction{Describe the CS component of the project, e.g. the higher level CS courses that contribute to it.} 
+The project at its core is a web application that will involve the skills learned over a lot of course work.
+\begin{itemize}
+    \item \textbf{Web and Mobile Development}: The project heavily depends on web dev skills to create a beautiful and functional UI paired with a robust and fast backend, using the skills learned from the course and those learned ourselves.
+    \item \textbf{Database Systems}: The project will require a database to store user data, assignments, submissions, etc.
+    \item \textbf{Data Comm. and Networking}: The project will require knowledge of creating a fast and scalable system architecture that can handle a large number of users.
+    \item \textbf{Software Engineering}: The project will require knowledge of software engineering principles to manage the project and the team effectively.
+    \item \textbf{Algorithms and Data Structures}: The project will require knowledge of algorithms and data structures to create a fast and efficient system. This involves skills learned over multiple courses.
+\end{itemize}
+
+\section{Scope and Deliverables}
+% \instruction{Justify the scope of the project with respect to the size of the team and the year long duration. List the foreseeable deliverables.}
+For this project we want to create a platform that will cater to the educational sector. The coding platform will have features like custom questions and assignment creation, class management, auto-grading, reports generation, and a all in one place to write, execute and test your code in a variety of languages. The platform will also have a user-friendly interface that will be easy to use for both students and instructors. With our team of 3 members, we believe that the following deliverables are achievable and justifiable for a year-long project:
+
+\begin{itemize}
+    \item \textbf{Architecture \& Database Design:} The project will have a well-defined architecture and database design that will be scalable and efficient. This will involve creating a detailed design document that will outline the system architecture, database schema, and other technical details.
+    \item \textbf{Core Functionality:} The platform will have the core functionality of creating and managing assignments, submitting and executing code for the popular coding languages, and auto-grading the submissions against defined test cases for that assignment.
+    \item \textbf{Website Portal/Interface:} The platform will have a user-friendly interface that will be easy to use for both students and instructors. The portal will have a built-in code editor which will be very similar looking to vs code.
+    \item \textbf{Class Management:} The platform will have a class management feature that will allow instructors to create classes, add students to the classes, and manage assignments for the classes. Kindof like a LMS.
+    \item \textbf{Integration with LMS:} The platform will have an integration feature that will allow it to be integrated with existing Learning Management Systems (LMS) used by educational institutes. This will allow the transfer grades and other data between the two systems.
+    \item \textbf{Reports Generation:} The platform will have a feature to generate reports for students and instructors. The reports will include the student's performance in the assignments, the class average, etc.
+    \item \textbf{Scalability \& Performance:} The platform will be designed to be scalable and performant to handle a large number of users and submissions. This will involve creating a robust backend and efficient database design. It will also involve the usage of containerization and orchestration tools like Docker and Kubernetes.
+    \item \textbf{Testing and Deployment:} The platform will be thoroughly tested to ensure that it is bug-free and works as expected. It will also be deployed on a cloud platform like AWS or Azure or on a local server machine. Beta testing will be done with live users to get feedback and improve the platform.
+    \item \textbf{Documentation \& Report:} The project will be well-documented with a user manual and a technical report that will explain the architecture, design, and implementation of the platform.
+\end{itemize}
+
+
+\section{Feasibility}
+% \instruction{List the resources, e.g. datasets, compute resources, software libraries, hardware, required for the project. Mention how you expect to access and utilize them for the project.}
+\begin{itemize}
+    \item \textbf{Datasets}
+    \begin{itemize}
+        \item \textbf{HackerRank Data:} 
+        This dataset includes problem sets, test cases, and other related data exported by the university from HackerRank. 
+        \newline
+        \textit{Purpose:} Used for the core functionality of the platform to test and evaluate programming submissions.
+        
+        \item \textbf{Additional University Data:} 
+        Other exportable data from the university systems that can be incorporated into the platform for further use.
+        \newline
+        \textit{Purpose:} Enables the platform to support an import feature for various data formats provided by the university.
+    \end{itemize}
+
+    \item \textbf{Compute Resources}
+    \begin{itemize}
+        \item \textbf{High Performance Machine/Server:} 
+        A development machine with sufficient memory, storage and a high performance processor for running services, processing data, and supporting platform operations.
+        \newline
+        \textit{Purpose:} To run the online service, handle data processing efficiently, and support backend operations during the development phase.
+    \end{itemize}
+
+    \item \textbf{Software Tools/Libraries}
+    \begin{itemize}
+        \item \textbf{Monaco Editor:} 
+        An open-source code editor by Microsoft \cite{monaco} that provides a flexible and powerful code editing experience. This is the same editor used in VS Code.
+        \newline
+        \textit{Purpose:} To allow users to write and test code directly on the platform with a familiar and robust interface.
+        
+        \item \textbf{Judge0 (Tentative):} 
+        An open-source \cite{j0} API used for compiling and executing code submissions. This is a self-deployable software that can be used to run code in multiple languages.
+        \newline
+        \textit{Purpose:} May be used for efficient code compilation and execution, though a custom-built engine is under consideration for better performance.
+
+        \item \textbf{API tools:} 
+        Tools for building an API specification, documentation and gateway, and tools for testing APIs
+        \newline
+        \textit{Purpose:} To handle API traffic, manage endpoints, and ensure secure communication between the platform and external services.
+    \end{itemize}
+
+    \item \textbf{Access to HackerRank}
+    \begin{itemize}
+        \item \textbf{HackerRank UI:} 
+        Access to HackerRank’s user interface will allow us to design the platform’s UI to be in line with existing designs.
+        \newline
+        \textit{Purpose:} Helps minimize user friction by providing a familiar interface that aligns with the experience on HackerRank.
+    \end{itemize}
+\end{itemize}
+
+\section{Team dynamics}
+% \instruction{Justify the suitability of the team members to the project. For example, their relevant courses, projects, internships, or research.}
+The team consists of three members, each with a unique set of skills and experiences that make them well-suited for the project.
+\begin{itemize}
+    \item \textbf{Ahmed Ali (aa07600):} I have experience in web development and have worked on multiple projects. I was working with Dr. Waqar Saleem as a full-stack developer on the project to create an alternative for HackerRank. Besides that, I have taken relevent elective courses like Data Comm. and Networking, Cryptography, and Network Security and Competitive Programming course which gives me a good insight into how programming contests and coding platforms work. I have also been part of a research project involving LLMs as part of my Intro to LLMs course. I have done a internship at HBL in the Cyber Security department and also worked on multiple freelance projects and other course projects.
+    \item \textbf{Burhanuddin Aliasghar Ezzi (be07724):} I have worked on a software engineering projects with complex architectures during the internships I did at Securiti and JBS. I have the experience in various backends and have a good grasp of the microservices architecture. Moreover, my strong fundamental concepts from the CS kernel courses taught at Habib have helped me to adapt to different technologies. Also the diverse electives such as GPU accelerated computing, Deep Learning etc. have enhanced my understanding of complex algorithms and datastructures.
+    \item \textbf{Ahsan Azeemi (aa07729):}
+\end{itemize}
+
+\section{Tech stack}
+% \instruction{Write details of the tech stack you will use for this project for e.g. if you are using MERN stack, you can write MongoDB, Express, React and NodeJS etc.}
+\subsection*{Frontend}
+We will be mainly using JavaScript and some of the major libraries and frameworks like React, Redux, and Material-UI for the frontend development. We will also be using the Monaco Editor for the code editor. A bunch of other libraries like Axios, etc. will also be used.
+
+\subsection*{Backend}
+For the backend, we will decide between going for Node.js with Express or using a completely different language like Python with Django or C\# with ASP.NET Core.
+
+\subsection*{Database}
+The main database will be either PostgreSQL or MongoDB depending on whether we opt for SQL or NoSQL database. Besides this we will also be using Redis db for caching and queuing purposes since it is a fast in-memory database.
+
+\subsection*{Architecture/Deployment}
+We will be using Docker for containerization and Kubernetes for orchestration. For deployment we will be choosing between a serverless architecture like AWS or a traditional server based architecture using local server machine.
+
+\section{References}
+% \instruction{List your references.}
+\begin{thebibliography}{}
+    \bibitem{statista}
+    “Global IT industry share by region 2022 | Statista,” Statista, 2022. https://www.statista.com/statistics/507365/worldwide-information-technology-industry-by- 
+    \bibitem{tribune} “Only 10\% IT graduates employable: SBP,” The Express Tribune, May 20, 2023. https://tribune.com.pk/story/2417643/only-10-it-graduates-employable-sbp
+    \bibitem{ind_res} P. R. Nair, “Increasing Employability of Indian Engineering Graduates through Experiential Learning Programs and Competitive Programming: Case Study,” Procedia Computer Science, vol. 172, pp. 831–837, 2020, doi: https://doi.org/10.1016/j.procs.2020.05.119.
+    \bibitem{eg_hr} HackerRank. https://www.hackerrank.com 
+    \bibitem{eg_lc} LeetCode. https://leetcode.com 
+    \bibitem{eg_cs} CodeSignal. https://codesignal.com 
+    \bibitem{monaco} Monaco Editor. https://microsoft.github.io/monaco-editor 
+    \bibitem{j0} Judge0. https://judge0.com 
+\end{thebibliography}
+
+\end{document}
